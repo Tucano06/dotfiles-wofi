@@ -8,9 +8,7 @@ client.focused #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0
 client.unfocused #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0
 client.urgent #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0
 client.placeholder #c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0
-exec pipewire
-exec wireplumber
-exec pipewire-pulse
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec autotiling-rs
 gaps inner 10
 input * {
